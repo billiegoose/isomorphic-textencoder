@@ -1,7 +1,10 @@
 # isomorphic-textencoder
 encode/decode Uint8Arrays to strings
 
-To perform UTF8 conversion in the browser it uses the native TextEncoder. In Node it uses native Buffer methods. This is just a thin wrapper that provides an isomorphic API.
+This is just a thin wrapper that provides an isomorphic API.
+- To perform UTF8 conversion in the browser it uses the native TextEncoder.
+  - It includes a polyfill so IE11 / Edge aren't left out.
+- In Node it uses native Buffer methods.
 
 ## Installation
 
